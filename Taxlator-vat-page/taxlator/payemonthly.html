@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="payem.css" >
+</head>
+<body>
+
+
+ <header class="header">
+      <div class="logo-placeholder">
+        <img src="TAX LOGO 2.png" alt="Taxlator Logo">
+      </div>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="calculate.html">Calculate</a>
+        <a href="taxguides.html">Tax Guides</a>
+        <a href="#">About</a>
+        <a href="#">FAQs</a>
+            <a href="terms.html">Terms</a>
+      </nav>
+
+     <a href="sign-in.html" class="header-btn">Login</a>
+   
+    
+    <div class="hamburger" onclick="toggleMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#">Home</a>
+      <a href="calculate.html">Calculate</a>
+      <a href="taxguides.html">Tax Guides</a>
+      <a href="#">About</a>
+      <a href="#">FAQs</a>
+          <a href="terms.html">Terms</a>
+    </div>
+  </header>
+
+  
+  <div class="page-wrapper">
+    <div class="back-wrapper">
+      <a href="calculate.html" class="back">&larr; Back</a>
+    </div>
+
+    <div class="calculator-card">
+      <h2>PAYE Calculator</h2>
+      <div class="subtitle">Enter your income details to Calculate your tax quickly</div>
+
+       <div class="section">
+         <label class="label">Income Period
+         </label>
+          <div class="toggle">
+           <button class="toggle-btn active">Monthly</button>
+             <button class="toggle-btn"><a href="payeannual.html">Annual</a></button>
+          </div>
+        </div>
+
+      <div class="input-group">
+        <label>Income</label>
+        <div class="input-box">
+          <span>₦</span>
+          <input type="number" placeholder="0">
+        </div>
+      </div>
+
+      <div class="options">
+        <div class="option">
+          <div>
+            <strong>Include Pension Contribution</strong>
+            <span>8% Deduction on basic salary</span>
+          </div>
+          <input type="checkbox">
+        </div>
+        <div class="option">
+          <div>
+            <strong>Include Rent Relief</strong>
+            <span>20% of monthly rent</span>
+          </div>
+          <input type="checkbox">
+        </div>
+        <div class="option">
+          <div>
+            <strong>Include National Health Insurance Scheme</strong>
+            <span>10% deduction on basic salary</span>
+          </div>
+          <input type="checkbox">
+        </div>
+        <div class="option">
+          <div>
+            <strong>Include National Housing Fund</strong>
+            <span>2.5% deduction on basic salary</span>
+          </div>
+          <input type="checkbox">
+        </div>
+      </div>
+
+      <button class="proceed-btn">Proceed</button>
+    </div>
+
+    <div class="footer">
+      <div>&copy; 2026 Taxlator. For information purpose only</div>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMobileNav() {
+      const nav = document.getElementById('mobileNav');
+      nav.style.display = nav.style.display === "flex" ? "none" : "flex";
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAT Result - Taxlator</title>
+    <link rel="stylesheet" href="vat-result.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Taxlator logo" />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Calculate</a></li>
+        <li><a href="#">Tax Guides</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+      <button class="login-btn">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>Login
+      </button>
+    </nav>
+
+    <main class="container">
+      <div class="calculator-card">
+        <div class="result-header">
+          <p class="label-text">VAT Result</p>
+          <h1 class="bold-amount">₦9,523.81</h1>
+          <p class="label-text">VAT Amount(5%)</p>
+        </div>
+
+        <hr class="divider" />
+
+        <div class="breakdown-grid">
+          <div class="info-box">
+            <span class="info-label">Transaction Amount (Excluding VAT)</span>
+            <span class="info-value">₦190,476.19</span>
+          </div>
+          <div class="info-box">
+            <span class="info-label">Total Amount (Including VAT)</span>
+            <span class="info-value">₦200,000.00</span>
+          </div>
+        </div>
+
+        <div class="summary-row">
+          <span>VAT Amount( 5%)</span>
+          <span class="summary-value">₦9,523.81</span>
+        </div>
+      </div>
+
+      <button class="btn-primary full-btn">Calculate Another Tax</button>
+
+      <div class="save-box">
+        <div class="save-text">
+          <h3>Save Your Calculations</h3>
+          <p>
+            Create a free account to save your tax calculations, track history,
+            and get tax reminders.
+          </p>
+        </div>
+        <div class="save-action">
+          <div class="mail-icon">
+            <i class="fa-regular fa-envelope"></i
+            ><input type="email" placeholder="Enter your email" />
+          </div>
+
+          <button class="btn-dark">Sign Up</button>
+        </div>
+        <a href="#" class="guest-link">Continue as guest</a>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Taxlator. For informational purposes only.</p>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>

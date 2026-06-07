@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAT Calculation</title>
+    <link rel="stylesheet" href="vat-page-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Navigation Bar...Start>>>> -->
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.png" alt="Taxlator logo" />
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#" class="active">Calculate</a></li>
+        <li><a href="#">Tax Guides</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQs</a></li>
+      </ul>
+
+      <button class="login-btn">
+        <i class="fa-solid fa-arrow-right-to-bracket"></i>Login
+      </button>
+    </nav>
+    <!-- <<<<<<<< Nav Bar End... -->
+
+    <!-- Main Container...Start>>>>>-->
+    <main class="container">
+      <div class="calculator-card">
+        <h2>VAT Calculation</h2>
+        <p class="subtitle">
+          Quickly add or remove tax from your prices using the latest 2026
+          rates.
+        </p>
+        <!-- Form Sections... Start>>>>>> -->
+        <div class="form-group">
+          <label class="trxn-amount">Transaction Amount</label>
+          <input type="text" placeholder="Enter amount" class="input-field" />
+        </div>
+        <div class="toggle-group">
+          <button class="toggle-btn active">+Add VAT</button>
+          <button class="toggle-btn">-Remove VAT</button>
+        </div>
+        <div class="form-section">
+          <label class="tax-rate">Tax Rate</label>
+          <div class="percentage-group">
+            <button class="percent active">Standard 20%</button>
+            <button class="percent">Reduced 5%</button>
+            <button class="percent">Zero 0%</button>
+            <button class="percent">Custom</button>
+          </div>
+        </div>
+        <div class="form-section">
+          <label for="trxn-type">Transaction type</label>
+          <div class="checkbox-grid">
+            <label class="checkbox-item">
+              Domestic sale/Purchase <input type="checkbox" checked />
+            </label>
+            <label class="checkbox-item">
+              Digital Services<input type="checkbox" />
+            </label>
+            <label class="checkbox-item">
+              Export/International<input type="checkbox" />
+            </label>
+            <label class="checkbox-item">
+              Exempt Items <input type="checkbox" />
+            </label>
+          </div>
+        </div>
+        <!-- <<<<<<<<< Forrm Sections End -->
+        <button class="btn-primary">Proceed</button>
+      </div>
+      <!-- Save Box...Start>>>>> -->
+      <div class="save-box">
+        <div class="save-text">
+          <h3>Save Your Calculations</h3>
+          <p>
+            Create a free account to save you tax calculations, track history,
+            and get tax reminders.
+          </p>
+        </div>
+        <div class="save-action">
+          <input type="email" placeholder="Enter your email" />
+          <button class="btn-dark">Sign Up</button>
+        </div>
+        <a href="#" class="guest-link">Continue as guest</a>
+      </div>
+      <!-- <<<<<<<<<<Save Box...End -->
+    </main>
+    <!-- <<<<<<<< Main Container...End -->
+
+    <footer>
+      <p>&copy; 2026 Taxlator. For informational purposes only.</p>
+      <div class="footer-links">
+        <a href="#">About</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Contact</a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #3b6edc;;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  background: #0d47a1;
+  padding: 15px 0;
+}
+
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  padding: 60px;
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.cta-btn {
+  margin-top: 20px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  background: #1565c0;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 10%;
+  text-align: center;
+}
+
+.section.dark {
+  background: #081a33;
+}
+
+.section h2 {
+  margin-bottom: 40px;
+  color: #4da3ff;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.card, .blog-card, .info-card {
+  background: #fff;
+  color: #000;
+  padding: 25px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.step {
+  display: inline-block;
+  background: #1565c0;
+  color: #fff;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.blog-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: #1565c0;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.blog-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #1565c0;
+  text-decoration: none;
+}
+
+/* FOOTER */
+.footer {
+  background: #0d47a1;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-content {
+    padding: 40px 20px;
+  }
+
+  nav {
+    display: none;
+  }
+}
